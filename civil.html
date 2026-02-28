@@ -1,0 +1,28 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-danger">Civil Engineering Branch</h1>
+            <p class="lead">Building the Foundations of the Modern World</p>
+        </div>
+        <div class="col-md-7">
+            <h3 class="fw-bold">Vision of the Department</h3>
+            <p style="line-height: 1.8;">The Civil Engineering department at PCPS is dedicated to producing competent diploma engineers capable of handling modern construction challenges. From surveying to structural design, our students are trained to be the backbone of infrastructure development.</p>
+            <div class="alert alert-danger shadow-sm">
+                <h5 class="fw-bold text-uppercase">Motivation</h5>
+                "Scientists study the world as it is; Civil Engineers create the world that has never been."
+            </div>
+            <p><strong>Department Strength:</strong> 7 Teaching Staff | 3 Assistant Staff</p>
+        </div>
+        <div class="col-md-5">
+            <div class="card p-3 shadow border-0">
+                <img src="{% static 'pcps/image/Civil Dept.jpeg' %}" class="img-fluid rounded mb-3">
+                <h5 class="fw-bold">Civil Engineering</h5>
+                <h5 class="fw-bold">HOD: Mr. Gobinda Ram Kalita</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

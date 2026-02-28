@@ -1,0 +1,123 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+
+{% block title %}Campus Life - PCPS Girls' Polytechnic{% endblock %}
+
+{% block content %}
+<style>
+    .campus-card {
+        border-radius: 15px;
+        overflow: hidden;
+        border: none;
+        transition: transform 0.3s ease;
+    }
+    .campus-card img {
+        height: 250px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .campus-card:hover img {
+        transform: scale(1.1);
+    }
+    .campus-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+    }
+    .overlay-text {
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        padding: 15px;
+    }
+</style>
+
+<div class="py-5 bg-navy text-white text-center" style="background-color: #004080;">
+    <h1 class="fw-bold">EXPLORE OUR CAMPUS</h1>
+    <p class="opacity-75">A vibrant environment designed for learning, innovation, and growth.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h2 class="fw-bold text-navy">Campus Environment</h2>
+            <hr class="w-25 border-primary border-3">
+            <p class="text-muted" style="text-align: justify;">
+                Located in the industrial hub of Bamunimaidan, Guwahati, our campus offers a serene yet technically advanced atmosphere. From high-tech computer labs to our traditional wall magazine corners, every inch of the campus is dedicated to the holistic development of our students.
+            </p>
+            <div class="row g-2 mt-3">
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h5 class="fw-bold mb-0">Greenery</h5>
+                        <p class="small mb-0 text-muted">Eco-friendly campus</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h5 class="fw-bold mb-0">Security</h5>
+                        <p class="small mb-0 text-muted">CCTV Monitored</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card campus-card shadow">
+                <img src="{% static 'pcps/image/CollegeGate.jpeg' %}" alt="Main Gate">
+                <div class="overlay-text">
+                    <h5 class="mb-0">Main Entrance</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="fw-bold mb-4 text-center">Campus Facilities</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card campus-card shadow-sm h-100 position-relative">
+                <img src="{% static 'pcps/image/College Library .jpeg' %}" alt="Library">
+                <div class="overlay-text">
+                    <h6 class="fw-bold mb-0">Digital Library</h6>
+                    <small>10,000+ Books & Journals</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card campus-card shadow-sm h-100 position-relative">
+                <img src="{% static 'pcps/image/Wall Magazine.jpeg' %}" alt="Wall Magazine">
+                <div class="overlay-text">
+                    <h6 class="fw-bold mb-0">Wall Magazine Corner</h6>
+                    <small>Shows Student's Creativity Towards Digital Future</small>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card campus-card shadow-sm h-100 position-relative">
+                <img src="{% static 'pcps/image/Alumni.jpeg' %}" alt="Wall Magazine">
+                <div class="overlay-text">
+                    <h6 class="fw-bold mb-0">Alumni Meet</h6>
+                    <small>Introduction with pass out Students</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 py-5 border-top">
+        <div class="col-md-3 text-center">
+            <i class="bi bi-wifi fs-1 text-primary"></i>
+            <h6 class="fw-bold mt-2">Campus Wi-Fi</h6>
+        </div>
+        <div class="col-md-3 text-center">
+            <i class="bi bi-lightning-charge fs-1 text-warning"></i>
+            <h6 class="fw-bold mt-2">24/7 Power Backup</h6>
+        </div>
+        <div class="col-md-3 text-center">
+            <i class="bi bi-shield-check fs-1 text-success"></i>
+            <h6 class="fw-bold mt-2">Safe for Girls</h6>
+        </div>
+        <div class="col-md-3 text-center">
+            <i class="bi bi-bus-front fs-1 text-danger"></i>
+            <h6 class="fw-bold mt-2">Bus Connectivity</h6>
+        </div>
+    </div>
+</div>
+{% endblock %}

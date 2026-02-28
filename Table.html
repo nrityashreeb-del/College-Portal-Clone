@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>PCPS Girls Polytechnic</title>
+<style>
+h2{text-decoration: underline wavy;}
+ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(138, 178, 240);
+            }
+            ul li{
+                float: left;
+            }
+            ul li a{
+                display: block;
+                text-align: center;
+                padding:14px 16px;
+            }
+            ul li a:hover{
+                background-color: aliceblue;
+            }
+
+
+body {
+  background-color: #f0f8ff;
+  font-family: Arial;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+}
+
+th, td {
+  border: 3px solid red;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+th {
+  background-color: lightgray;
+}
+td {
+  background-color: lemonchiffon;
+}
+h1 {
+ font-size: 45px;
+}
+</style>
+</head>
+<body>
+<h1 align="center" style="color:darkblue"><u>Student Marks Table</u></h1>
+<ul><li><a href="/">Home</a></li>
+    <li><a href="/Table/">About</a></li></ul>
+<table>
+<tr><th><b><u>Name</b></u></th>
+<th><b><u>Marks</b></u></th></tr>
+<tr><td>Ravi</td><td>85</td></tr>
+<tr><td>Priya</td><td>90</td></tr>
+<tr><td>Ankit</td><td>80</td></tr>
+</table>
+</body>
+</html>

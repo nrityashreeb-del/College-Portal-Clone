@@ -1,0 +1,28 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary">Computer Engineering Branch</h1>
+            <p class="lead">Coding the Future, One Line at a Time</p>
+        </div>
+        <div class="col-md-7">
+            <h3 class="fw-bold">The Digital Revolution</h3>
+            <p style="line-height: 1.8;">Our Computer Engineering department focuses on software development, networking, and hardware troubleshooting. We prepare our students for the fast-paced IT industry through rigorous practical training in modern labs.</p>
+            <div class="alert alert-primary shadow-sm">
+                <h5 class="fw-bold text-uppercase">Motivation</h5>
+                "The best way to predict the future is to invent it."
+            </div>
+            <p><strong>Department Strength:</strong> 5 Teaching Staff | 2 Assistant Staff</p>
+        </div>
+        <div class="col-md-5">
+            <div class="card p-3 shadow border-0">
+                <img src="{% static 'pcps/image/Computer Dept 2.jpeg' %}" class="img-fluid rounded mb-3">
+                <h5 class="fw-bold">Computer Engineering</h5>
+                <h5 class="fw-bold">HOD: Mrs. Jyotsna Rani Das</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

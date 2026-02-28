@@ -1,0 +1,28 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center mb-5">
+            <h1 class="display-4 fw-bold text-success">Architectural Assistantship Branch</h1>
+            <p class="lead">Designing Creative Spaces for a Better Life</p>
+        </div>
+        <div class="col-md-7">
+            <h3 class="fw-bold">Art Meets Science</h3>
+            <p style="line-height: 1.8;">This department blends the creativity of art with the precision of engineering. Students learn architectural drafting, interior design, and CAD modeling to create functional and beautiful living spaces.</p>
+            <div class="alert alert-success shadow-sm">
+                <h5 class="fw-bold text-uppercase">Motivation</h5>
+                "Architecture is a visual art, and the buildings speak for themselves."
+            </div>
+            <p><strong>Department Strength:</strong> 8 Teaching Staff | 4 Assistant Staff</p>
+        </div>
+        <div class="col-md-5">
+            <div class="card p-3 shadow border-0">
+                <img src="{% static 'pcps/image/Architectutal Assistantship.jpeg' %}" class="img-fluid rounded mb-3">
+                <h5 class="fw-bold">Architectural Assistantship</h5>
+                <h5 class="fw-bold">HOD: Mrs. Jina Deka</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center fw-bold mb-5">Our Specialized Departments</h1>
+    <div class="row g-4 text-center">
+        <div class="col-md-4">
+            <div class="card shadow p-4 border-top border-danger border-5">
+                <img src="{% static 'pcps/image/CV LOGO.png' %}" class="mx-auto mb-3" width="100">
+                <h3>CIVIL</h3>
+                <p>HOD: <strong>Mr. Gobinda Ram Kalita</strong></p>
+                <a href="/civil/" class="btn btn-danger">View Department</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow p-4 border-top border-primary border-5">
+                <img src="{% static 'pcps/image/CO LOGO.png' %}" class="mx-auto mb-3" width="100">
+                <h3>COMPUTER</h3>
+                <p>HOD: <strong>Mrs. Jyotsna Rani Das</strong></p>
+                <a href="/cse/" class="btn btn-primary">View Department</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow p-4 border-top border-success border-5">
+                <img src="{% static 'pcps/image/AA LOGO.png' %}" class="mx-auto mb-3" width="100">
+                <h3>ARCHITECTURE</h3>
+                <p>HOD: <strong>Mrs. Jina Deka</strong></p>
+                <a href="/arch/" class="btn btn-success">View Department</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

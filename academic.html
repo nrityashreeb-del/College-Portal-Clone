@@ -1,0 +1,26 @@
+{% extends 'pcps/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center fw-bold mb-5">Academic Resources</h1>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4 h-100 shadow-sm">
+                <h3><i class="bi bi-file-pdf text-danger"></i> Syllabus Section</h3>
+                <p>Download the latest SCTE Assam syllabus for all branches.</p>
+                <a href="{% static 'pcps/pdf/MODIFIED 1ST SEMESTER DETAILED CURRICULUM_240914_140231.pdf' %}" class="btn btn-outline-danger mb-2">Civil Engineering Syllabus</a>
+                <a href="{% static 'pcps/pdf/3rd sem Syllabus_Computer Engg.pdf' %}" class="btn btn-outline-primary mb-2">Computer Engineering Syllabus</a>
+                <a href="{% static 'pcps/pdf/FINAL_2ND SEMESTER DETAILED CURRICULUM_CORRECTED.pdf' %}" class="btn btn-outline-success">Architectural Assistantship Syllabus</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4 h-100 shadow-sm">
+                <h3><i class="bi bi-calendar-event text-navy"></i> Schedules</h3>
+                <p>Stay updated with the latest class timings and academic calendar.</p>
+                <a href="{% static 'pcps/pdf/Routine-1.pdf' %}" class="btn btn-navy mb-2 w-100">Download Class Routine</a>
+                <a href="{% static 'pcps/pdf/Academic Calendar 2025-2026.pdf' %}" class="btn btn-outline-dark w-100">Academic Calendar 2026</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
